@@ -1,0 +1,26 @@
+{
+  "name": "express",
+  "plugin": "platform",
+  "version": "0.1.1",
+  "description": "lwot platform express",
+  "main": "index.js",
+  "contributors": [
+    {
+      "name": "proin",
+      "email": "proin@proinlab.com",
+      "web": "http://proinlab.com"
+    },
+    {
+      "name": "ple",
+      "email": "mknl8520@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^5.0.1",
+    "forever": "^0.15.3",
+    "nodemon": "^1.11.0",
+    "open": "0.0.5",
+    "tail": "^1.2.1"
+  }
+}
