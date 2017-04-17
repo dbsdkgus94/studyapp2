@@ -1,0 +1,25 @@
+doctype html
+html(ng-app="app")
+    head
+        include components/jade/header
+        script(src="{$ROOT}/view/js/signin.js")
+        link(rel="stylesheet", href="{$ROOT}/view/css/signin.css")
+
+    body(ng-controller='ctrl')
+        .top
+            img.back(ng-click= 'back.back()')(src = 'https://cdn4.iconfinder.com/data/icons/chat-app-icon/36/back_2-128.png')()
+            h1.title GAZE DESK
+            .s_title Your Life and ideal
+        .login
+            input.login_input.name(type='text',size="39",placeholder='E-mail')
+            input.login_input.pass(type='password',size="39",placeholder='Password')
+            .login_submit Login
+            .lookFoPassword(ng-click= 'location.findpw()')  Forgot password?
+            .createAccount(ng-click= 'location.signup()') Create a new account
+        .bottom
+            .empty 　
+            .button Connect with Facebook
+            .button Enter as Guest
+
+
+

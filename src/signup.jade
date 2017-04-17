@@ -1,0 +1,17 @@
+doctype html
+html(ng-app="app")
+    head
+        include components/jade/header
+        script(src="{$ROOT}/view/js/signup.js")
+        link(rel="stylesheet", href="{$ROOT}/view/css/signup.css")
+
+    body(ng-controller='ctrl')
+        .top
+            img.back(ng-click= 'back.back()')(src = 'https://cdn4.iconfinder.com/data/icons/chat-app-icon/36/back_2-128.png')
+            p.title Create a new account
+        .signup
+            input.input(type='text',size="39",placeholder='E-mail')
+            input.input(type='text',size="39",placeholder='Name')
+            .button(ng-click='location.signup2()') Next
+
+

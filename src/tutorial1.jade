@@ -1,0 +1,23 @@
+doctype html
+html(ng-app="app")
+    head
+        include components/jade/header
+        script(src="{$ROOT}/view/js/tutorial.js")
+        link(rel="stylesheet", href="{$ROOT}/view/css/tutorial.css")
+
+    body(ng-controller='ctrl')
+        .top
+            p.title Hello
+        .middle
+            img.image(src='view/css/APP source Images/02_tutorial-illust01.png')
+        .bottom
+            p.descript
+                | Proceed to the initial setting in order to use
+                br
+                | the app GAZE DESK.
+            .tab
+                .selectCircle
+                .circle
+                .circle
+                .circle
+
